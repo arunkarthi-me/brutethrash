@@ -1,3 +1,6 @@
+## ABOUT BRUTETHRASH
+This Python script is designed for brute-forcing login credentials on a website. It utilizes multiple threads to concurrently try different username and password combinations within a specified length range.<br>
+
 ## USAGE<br>
 1. Clone the repository<br>
 ```text
@@ -23,4 +26,6 @@
 
 **bruteforce(url, path, chars, min_len, max_len)** <br>
 * Iterates over all possible combinations of characters within the specified length range.<br>
-* Calls try_bruteforce to attempt login with each combination.
+* Calls try_bruteforce to attempt login with each combination.<br>
+## THREADED BRUTE-FORCE
+The script creates a specified number of threads, each running the bruteforce function concurrently. This allows for faster and more efficient brute-forcing.
